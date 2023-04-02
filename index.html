@@ -1,26 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive product landing page">
+  <title>Product Landing page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <!--
+<body class="m-10">
 
-    Hello Camper!
+  <header id="header" class="fixed top-0 left-0">
+    <nav id="nav-bar" class="navbar bg-base-100 fixed right-0 top-0 mt-10">
+      <div class="flex-1" id="brand">
+        <a class=""><img id="header-img" class="w-[240px]"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt=""></a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="nav-link" href="#section1">Features</a></li>
+          <li><a class="nav-link" href="#section2">How it works</a></li>
+          <li><a class="nav-link" href="#section3">Pricing</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+  </header>
 
-    - The freeCodeCamp Team
+  <section id="section1">
+    <div class="flex items-center justify-center mt-40">
+      <h2 class="text-3xl font-bold">Handcrafted, home-made masterpieces</h2>
+    </div>
+    <div class="mt-10 flex items-center justify-center">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" class="w-[300px] justify-center rounded-md bg-blue-100 p-2 px-3"
+          placeholder="Enter your email address" />
 
-    -->
-    <script  src="js/index.js"></script>
-  </body>
+
+        <div class="flex items-center justify-center">
+          <button type="submit" id="submit" style="cursor: pointer;"
+            class="mt-5 rounded-md bg-yellow-300 px-3 py-1 font-semibold tracking-widest">GET STARTED</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <section id="section2" class="mt-20  md:block md:flex  sm:hidden ">
+    <div class="ml-10 flex w-[500px] gap-4 rounded-md bg-blue-100 p-3 md:block sm:mt-2 md:mt-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="h-16 w-16 text-gray-900">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+      </svg>
+      <div class="space-y-2">
+        <h1 class="mt-1 text-2xl font-bold text-gray-900">Premium Features</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+          purchase.</p>
+      </div>
+    </div>
+    <div class="ml-10 flex w-[500px] gap-4 rounded-md bg-blue-100 p-3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-16 h-16 text-gray-900">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+      </svg>
+
+      <div class="space-y-2">
+        <h1 class="mt-1 text-2xl font-bold text-gray-900">Premium Features</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+          purchase.</p>
+      </div>
+    </div>
+    <div class="ml-10 flex w-[500px] gap-4 rounded-md bg-blue-100 p-3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="h-16 w-16 text-gray-900">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+      </svg>
+      <div class="space-y-2">
+        <h1 class="mt-1 text-2xl font-bold text-gray-900">Premium Features</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+          purchase.</p>
+      </div>
+    </div>
+  </section>
+  <section id="section3" class="flex justify-center mt-10">
+
+
+    <iframe autoplay height="315" width="400px" id="video"
+      src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0"
+      allowfullscreen></iframe>
+
+  </section>
+
+  <section id="section4" class="mt-10 p-4 sm:grid sm:gap-5 sm:grid-cols-1 md:grid md:grid-cols-3">
+    <div
+      class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
+      <div class="flex items-baseline text-gray-900 dark:text-white">
+        <span class="text-3xl font-semibold">$</span>
+        <span class="text-5xl font-extrabold tracking-tight">600</span>
+        <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/year</span>
+      </div>
+      <!-- List -->
+      <ul role="list" class="space-y-5 my-7">
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">2 team members</span>
+        </li>
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">20GB Cloud storage</span>
+        </li>
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">API Access</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">24×7 phone & email support</span>
+        </li>
+      </ul>
+      <button type="button"
+        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
+        plan</button>
+    </div>
+    <div
+      class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Premium plan</h5>
+      <div class="flex items-baseline text-gray-900 dark:text-white">
+        <span class="text-3xl font-semibold">$</span>
+        <span class="text-5xl font-extrabold tracking-tight">1200</span>
+        <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/year</span>
+      </div>
+      <!-- List -->
+      <ul role="list" class="space-y-5 my-7">
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">2 team members</span>
+        </li>
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">20GB Cloud storage</span>
+        </li>
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">API Access</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">24×7 phone & email support</span>
+        </li>
+      </ul>
+      <button type="button"
+        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
+        plan</button>
+    </div>
+    <div
+      class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
+      <div class="flex items-baseline text-gray-900 dark:text-white">
+        <span class="text-3xl font-semibold">$</span>
+        <span class="text-5xl font-extrabold tracking-tight">600</span>
+        <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/year</span>
+      </div>
+      <!-- List -->
+      <ul role="list" class="space-y-5 my-7">
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">2 team members</span>
+        </li>
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">20GB Cloud storage</span>
+        </li>
+        <li class="flex space-x-3">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">API Access</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
+        </li>
+        <li class="flex space-x-3 line-through decoration-gray-500">
+          <!-- Icon -->
+          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Check icon</title>
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-base font-normal leading-tight text-gray-500">24×7 phone & email support</span>
+        </li>
+      </ul>
+      <button type="button"
+        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
+        plan</button>
+    </div>
+
+  </section>
+  <footer class="bg-white rounded-lg shadow mt-8 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2016 Original Trombones All Rights
+        Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
